@@ -43,7 +43,7 @@ const std::string &Employee_profile::getEmpDepartment() const {
 }
 
 void Employee_profile::setEmpDepartment(const std::string &empDepartment) {
-    emp_Department = department;
+    _empDepartment = department;
 }
 
 
@@ -60,18 +60,19 @@ const std::string &Employee_profile::getEmpNames() const {
 }
 
 void Employee_profile::setEmpNames(const std::string &empNames) {
-    emp_Names = name;
+    _empNames = name;
 }
 
 
 // ID getters and setters
 //-------------------------------------------------
 int Employee_profile::getEmpId() const {
-    // Random number generator from 1 to 1000
-    tempId = rand() % 1000 + 1;
+    std::cout << "Enter employee ID number: ";
+    std::cin >> tempId;
     return tempId;
 }
 
 void Employee_profile::setEmpId(int empId) {
-    emp_Id = tempId;
+    _empId = tempId;
 }
+
