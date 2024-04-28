@@ -8,9 +8,9 @@
 
 class Employee_profile {
 private:
-    std::string emp_Department;
-    std::string emp_Names;
-    int emp_Id;
+    std::string _empDepartment;
+    std::string _empNames;
+    int _empId;
 
 public:
 
