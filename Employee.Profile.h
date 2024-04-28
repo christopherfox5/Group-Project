@@ -1,14 +1,13 @@
-//
-// Created by Chris fox on 4/24/24.
-//
-
+// Employee.Profile.h
+// Created by Chris fox
+// Employee profile declarations
+//-------------------------------------------------
 #ifndef GROUP_PROJECT_EMPLOYEE_PROFILE_H
 #define GROUP_PROJECT_EMPLOYEE_PROFILE_H
 #include <iostream>
 
 class Employee_profile {
 private:
-
     std::string emp_Department;
     std::string emp_Names;
     int emp_Id;
