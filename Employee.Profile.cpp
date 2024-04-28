@@ -1,6 +1,7 @@
-//
-// Created by Chris fox on 4/24/24.
-//
+// Employee.Profile.cpp
+// Created by Chris fox
+// Employee profile definitions
+//-------------------------------------------------
 #include "Employee.Profile.h"
 #include <iostream>
 #include <cstdlib>
@@ -12,6 +13,7 @@ bool valid = false;
 // Department getters and setters
 //-------------------------------------------------
 const std::string &Employee_profile::getEmpDepartment() const {
+    // Asking for user input for department
     while(valid == false) {
         std::cout << "1. Management \n2. Sales \n3. Engineering \n4. H.R. \nEnter employee department number: " ;
         std::cin >> selection;
@@ -46,6 +48,7 @@ void Employee_profile::setEmpDepartment(const std::string &empDepartment) {
 
 
 // Name getters and setters
+// Asks for user first and last name, then combines them in one string.
 //-------------------------------------------------
 const std::string &Employee_profile::getEmpNames() const {
     std::cout << "Enter employee first name: ";
@@ -64,6 +67,7 @@ void Employee_profile::setEmpNames(const std::string &empNames) {
 // ID getters and setters
 //-------------------------------------------------
 int Employee_profile::getEmpId() const {
+    // Random number generator from 1 to 1000
     tempId = rand() % 1000 + 1;
     return tempId;
 }
